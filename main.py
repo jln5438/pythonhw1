@@ -36,7 +36,7 @@ elif(secondGrade=='C+'):
   secondGPA=2.33
 elif(secondGrade=='C'):
   secondGPA=2.0
-elif(firstGrade=='D'):
+elif(secondGrade=='D'):
   secondGPA=1.0
 print("Grade point for course 2 is: "+str(secondGPA))
 thirdGrade=input("Enter your course 3 letter grade: ")
@@ -60,5 +60,7 @@ elif(thirdGrade=='D'):
   thirdGPA=1.0
 print("Grade point for course 3 is: "+str(thirdGPA))
 totalCredits=(int(firstCredit)+int(secondCredit)+int(thirdCredit))
+
 GPA=((int(firstGPA)*int(firstCredit))+(int(secondGPA)*int(secondCredit))+(int(thirdGPA)*int(thirdCredit))/totalCredits)
+
 print("Your GPA is: "+str(GPA))
