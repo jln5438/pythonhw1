@@ -46,7 +46,7 @@ if(thirdGrade=='A'):
   thirdGPA=4.0
 elif(thirdGrade=='A-'):
   thirdGPA=3.67
-elif(thirdGrade=='B+'):
+elif(thirdGrade=='B+'): 
   thirdGPA=3.33
 elif(thirdGrade=='B'):
   thirdGPA=3.0
