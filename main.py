@@ -43,14 +43,14 @@ thirdGrade=input("Enter your course 3 letter grade: ")
 thirdCredit=input("Enter your course 3 credit: ")
 thirdGPA=0.0
 if(thirdGrade=='A' or thirdGrade=='a'):
-  firstGPA=4.0
+  thirdGPA=4.0
 elif(thirdGrade=='A-' or thirdGrade=='a-'):
   thirdGPA=3.67
 elif(thirdGrade=='B+' or thirdGrade=='b+'):
   thirdGPA=3.33
 elif(thirdGrade=='B' or thirdGrade=='b'):
   thirdGPA=3.0
-elif(firstGrade=='B-' or thirdGrade=='b-'):
+elif(thirdGrade=='B-' or thirdGrade=='b-'):
   thirdGPA=2.67
 elif(thirdGrade=='C+' or thirdGrade=='c+'):
   thirdGPA=2.33
@@ -59,8 +59,10 @@ elif(thirdGrade=='C' or thirdGrade=='c'):
 elif(thirdGrade=='D' or thirdGrade=='d'):
   thirdGPA=1.0
 print("Grade point for course 3 is: "+str(thirdGPA))
+
 totalCredits=(int(firstCredit)+int(secondCredit)+int(thirdCredit))
-
-GPA=((int(firstGPA)*int(firstCredit))+(int(secondGPA)*int(secondCredit))+(int(thirdGPA)*int(thirdCredit))/totalCredits)
-
+first=float(firstGPA)*float(firstCredit)
+second=float(secondGPA)*float(secondCredit)
+third=float(thirdGPA)*float(thirdCredit)
+GPA=(first+second+third)/totalCredits
 print("Your GPA is: "+str(GPA))
